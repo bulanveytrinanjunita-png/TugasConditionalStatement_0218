@@ -36,3 +36,18 @@ string cekStatus(float bmi)
         return "Obesitas";
     }
 }
+
+int main()
+{
+    float berat, tinggi, bmi;
+
+    inputData(berat, tinggi);
+
+    bmi = hitungBMI(berat, tinggi);
+
+    cout << "\n--- Hasil ---" << endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << cekStatus(bmi) << endl;
+
+    return 0;
+}
